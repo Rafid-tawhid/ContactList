@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_color"
+       android:orientation="vertical">
+
+        <TextView
+            android:paddingTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Profile Details"
+            android:textSize="35dp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            ></TextView>
+        <ScrollView
+            android:id="@+id/layout"
+            android:layout_height="match_parent"
+            android:scrollbars="horizontal|vertical"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dip"
+            android:scrollbarStyle="outsideInset"
+            android:fillViewport="true">
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalView"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal|vertical"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dip">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tlGridTable" >
+    <TableRow>
+    <TextView android:layout_height="60dp"
+        android:padding="10dp"
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:text="Name"
+
+        android:textSize="25dp"
+        android:textColor="@color/black">
+
+    </TextView>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:textSize="25dp"
+            android:id="@+id/showNameId"
+            android:textColor="@color/black">
+
+        </TextView>
+
+</TableRow>
+                    <TableRow>
+                        <TextView android:layout_height="60dp"
+                            android:padding="10dp"
+                            android:layout_margin="8dp"
+                            android:layout_width="wrap_content"
+                            android:text="Email"
+                            android:textSize="25dp"
+                            android:textColor="@color/black">
+
+                        </TextView>
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_margin="8dp"
+                            android:textSize="25dp"
+                            android:id="@+id/showEmailId"
+                            android:textColor="@color/black">
+
+                        </TextView>
+
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:layout_height="60dp"
+                            android:padding="10dp"
+                            android:layout_margin="8dp"
+                            android:layout_width="wrap_content"
+                            android:text="Address"
+                            android:textSize="25dp"
+                            android:textColor="@color/black">
+
+                        </TextView>
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_margin="8dp"
+                            android:textSize="25dp"
+                            android:id="@+id/showAddressId"
+                            android:textColor="@color/black">
+
+                        </TextView>
+
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:layout_height="60dp"
+                            android:padding="10dp"
+                            android:layout_margin="8dp"
+                            android:layout_width="wrap_content"
+                            android:text="City"
+                            android:textSize="25dp"
+                            android:textColor="@color/black">
+
+                        </TextView>
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_margin="8dp"
+                            android:textSize="25dp"
+                            android:id="@+id/showCityId"
+                            android:textColor="@color/black">
+
+                        </TextView>
+
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:layout_height="60dp"
+                            android:padding="10dp"
+                            android:layout_margin="8dp"
+                            android:layout_width="wrap_content"
+                            android:text="Gender"
+                            android:textSize="25dp"
+                            android:textColor="@color/black">
+
+                        </TextView>
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_margin="8dp"
+                            android:textSize="25dp"
+                            android:id="@+id/showGenderId"
+                            android:textColor="@color/black">
+
+                        </TextView>
+
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:layout_height="60dp"
+                            android:padding="10dp"
+                            android:layout_margin="8dp"
+                            android:layout_width="wrap_content"
+                            android:text="Phone"
+                            android:textSize="25dp"
+                            android:textColor="@color/black">
+
+                        </TextView>
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_margin="8dp"
+                            android:textSize="25dp"
+                            android:id="@+id/showPhoneId"
+                            android:textIsSelectable="true"
+                            android:textColor="@color/black">
+
+                        </TextView>
+
+                    </TableRow>
+
+
+                    <TableRow>
+                        <TextView android:layout_height="60dp"
+                            android:padding="10dp"
+                            android:layout_margin="8dp"
+                            android:layout_width="wrap_content"
+                            android:text="Blood Group"
+                            android:textSize="25dp"
+                            android:textColor="@color/black">
+
+                        </TextView>
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_margin="8dp"
+                            android:textSize="25dp"
+                            android:id="@+id/showBloodgrpId"
+                            android:textIsSelectable="true"
+                            android:textColor="@color/black">
+
+                        </TextView>
+
+                    </TableRow>
+
+                    <TableRow>
+
+
+                    </TableRow>
+
+
+
+
+
+
+                </TableLayout>
+            </HorizontalScrollView>
+        </ScrollView>
+    </LinearLayout>
+</layout>
